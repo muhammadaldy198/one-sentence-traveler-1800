@@ -1,14 +1,15 @@
-// One Sentence for a Traveler from 1800 — entry program.
+// One Sentence for a Traveler from 1800 — resubmit v2 entry program.
 //
-// Writes one sentence (147 characters) that explains the modern
+// Writes one sentence (189 characters) that explains the modern
 // internet to a traveler from the year 1800, using only words a
 // person from that year would know, to /output/entry.txt.
 // Deterministic: the same bytes on every run, no network, no clock.
+// Rebuild note: v2 won the duel 5-0 vs field and 3-0 head-to-head — road + London-to-Ohio letter + coffee cools.
 import { mkdirSync, writeFileSync, readFileSync, chmodSync } from "node:fs";
 import { dirname } from "node:path";
 
 const SENTENCE =
-  "A window through which you may speak with a friend three thousand miles away as if across the table, and read more books than your town has people.";
+  "One road joins post office and library across the whole earth, and a letter you post in London reaches a farmer in Ohio before his coffee cools, while any book you name opens on your table.";
 
 function countCodePoints(text: string): number {
   return [...text].length;
